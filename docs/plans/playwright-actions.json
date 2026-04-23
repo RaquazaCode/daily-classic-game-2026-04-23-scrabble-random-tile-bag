@@ -1,0 +1,31 @@
+{
+  "schema": "web_game_playwright_client/v1",
+  "scenario": "scrabble-random-tile-bag-scripted",
+  "steps": [
+    {
+      "name": "place-at-center",
+      "buttons": ["left_mouse_button", "left_mouse_button"],
+      "mouse_x": [76, 282],
+      "mouse_y": [672, 370],
+      "frames": 12
+    },
+    {
+      "name": "build-horizontal-chain",
+      "buttons": ["left_mouse_button", "left_mouse_button", "left_mouse_button", "left_mouse_button"],
+      "mouse_x": [76, 350, 76, 418],
+      "mouse_y": [672, 370, 672, 370],
+      "frames": 20
+    },
+    {
+      "name": "premium-extension",
+      "buttons": ["left_mouse_button", "left_mouse_button", "left_mouse_button", "left_mouse_button"],
+      "mouse_x": [76, 418, 76, 418],
+      "mouse_y": [672, 438, 672, 506],
+      "frames": 24
+    }
+  ],
+  "deterministic_checks": [
+    "window.advanceTime(5000)",
+    "window.render_game_to_text() includes score= and board:"
+  ]
+}

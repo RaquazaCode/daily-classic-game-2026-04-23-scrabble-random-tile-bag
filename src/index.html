@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrabble: Random Tile Bag</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="panel">
+        <h1>Scrabble: Random Tile Bag</h1>
+        <p class="subtitle">A deterministic quick-play word board challenge with seeded bag draws and placement combos.</p>
+        <ul>
+          <li>Click a rack tile, then click a board cell to place it.</li>
+          <li>Placed tiles must connect orthogonally to your existing chain (except the first tile).</li>
+          <li><kbd>P</kbd> pause, <kbd>R</kbd> reset run, <kbd>N</kbd> new run after timer ends.</li>
+        </ul>
+        <p id="status" class="status"></p>
+        <p id="rack-hint" class="status"></p>
+        <h2>Recent Events</h2>
+        <ol id="events" class="events"></ol>
+      </section>
+      <canvas id="game" width="620" height="760" aria-label="Scrabble-inspired game board canvas"></canvas>
+    </main>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
