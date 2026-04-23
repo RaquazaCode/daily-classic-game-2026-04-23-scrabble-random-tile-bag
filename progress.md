@@ -3,13 +3,14 @@
 ## Completed
 - Selected queue rank #1 game: `scrabble-digital`.
 - Applied twist: `random tile bag`.
-- Scaffolded canonical folder and replaced template code with new deterministic implementation.
+- Scaffolded canonical folder and replaced template code with deterministic implementation.
 - Added tests, self-check, build/capture scripts, and standardized Playwright action payload.
+- Ran verification: `pnpm install`, `pnpm test`, `pnpm build`, `pnpm capture`.
 
 ## In Progress
-- Verification run (install/test/build/capture).
-- GitHub publish flow (repo creation, feature branch, PR, merge).
-- Deployment wrapper execution and metadata reconciliation.
+- GitHub feature branch flow (PR + merge).
+- Post-merge verification and deployment wrapper run.
+- Canonical automation state/catalog/report/index reconciliation.
 
 ## Notes
 - Deterministic hooks exported on `window` for automation.
